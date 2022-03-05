@@ -31,8 +31,16 @@ Steps Taken:
         - Head back to **Manage Plugins** and search under **Available** for Pipeline: AWS Steps and Download Now and Install after restart
 4. Create a GitHub repository to store the code (skip if already created)
     - Create `index.html` and `Jenkinsfile`
+    - Commit the code and push to the Git repository.
+    - Copy and paste the Git url and authenticate with login.
 5. Apply the AWS credentials in Jenkins
+    - Select gear icon besides the project name, this will take you back to the original Jenkins website
+    - Select **Credential** on the left side, and select **global** and select from the drop-down menu `AWS Credentials` (make sure that Jenkins has been restarted for this option to show up.)
 6. Create an AWS S3 Bucket
+    - Ensure that **Block Public Access Settings for this bucket** is unchecked
+    - Agree to the acknowledgement
+    - Select the bucket's name and head to **Permissions**
+    - Edit **Bucket Policy**
 7. Create the pipeline for AWS
 8. Add another stage in the pipeline
     - Install `tidy` which is a linter to lint the example html file.
