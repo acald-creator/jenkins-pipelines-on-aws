@@ -6,7 +6,11 @@ Project: Jenkins Pipelines on AWS
 
 Required:
 
-1. AWS CLI
+1. AWS CLI v2
+2. Docker
+3. Java 11 (Jenkins)
+3. Jenkins installed in Amazon EC2
+4. tidy (html linter)
 
 Steps Taken:
 
